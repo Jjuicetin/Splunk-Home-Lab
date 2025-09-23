@@ -29,7 +29,8 @@ Designed and implemented a simulated Security Operations Center (SOC) environmen
  ### Tools & Technologies
  
 - Splunk Enterprise & Universal Forwarder
-- Ubuntu Server 22.04, Windows 10 Pro
+- Ubuntu Server 22.04, Windows 10 Pro![Uploading splunk lab diagram.svg…]()
+
 - MITRE ATT&CK Framework (simulate MITRE ATT&CK on Windows VM)
 - Oracle VirtualBox
 - Atomic Red Team
@@ -45,7 +46,7 @@ This allows them to communicate with each other directly as if they were separat
 - **Splunk Enterprise Server (Ubuntu 22.04):** 10.0.0.58
 - **Linux Client (Ubuntu 22.04):** 10.0.0.40
 - **Windows 10 Client:** 10.0.0.41
-- **Host Machine (Windows 11):** 10.0.0.25
+- **Host Machine (Windows 10):** 10.0.0.31
 
 **Communication Flow**
 1. The **Linux client** and **Windows client** forward their logs to the Splunk server.
