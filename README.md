@@ -29,8 +29,7 @@ Designed and implemented a simulated Security Operations Center (SOC) environmen
  ### Tools & Technologies
  
 - Splunk Enterprise & Universal Forwarder
-- Ubuntu Server 22.04, Windows 10 Pro![Uploading splunk lab diagram.svg…]()
-
+- Ubuntu Server 22.04, Windows 10 Pro
 - MITRE ATT&CK Framework (simulate MITRE ATT&CK on Windows VM)
 - Oracle VirtualBox
 - Atomic Red Team
