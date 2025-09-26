@@ -55,4 +55,12 @@ This allows them to communicate with each other directly as if they were separat
 2. The **Splunk Enterprise Server** (10.0.0.58) listens on TCP port **9997** for incoming logs from forwarders.
 3. I use my **host machine** to connect to Splunk Web (`http://10.0.0.58:8000`) for dashboards, searches, and detections.
 
-**Diagram**
+### Detections
+This lab was configured to detect:
+1. Failed SSH login brute force
+   Used Hydra on Kali to simulate brute force attacks from a list of passwords.
+2. T1107 Bits Job MITTRE ATT&CK
+   Used Atomic Red Team to simulate a T1107 persistance attack on Windows 10.
+
+   Refer to attacks.md to see the simulated attacks & Logs generated!
+   Refer to detections.md to see the queries and results.
