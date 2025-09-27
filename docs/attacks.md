@@ -9,4 +9,4 @@ where -l to specify the username since we know it. -P to tell Hydra to use a lis
 
 
 ### T1197 Bits Job Simulation
-To simulate this attack, use Atomic Red Team.
+To simulate this attack, i used Atomic Red Team. Atomic Red Team is an open-source library and PowerShell-based framework that provides simple, focused tests to emulate adversary tactics, techniques, and procedures (TTPs) mapped to the MITRE ATT&CK framework
