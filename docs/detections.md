@@ -1,10 +1,18 @@
 ### Brute Force Detection
+**Command:** index=main source="linux_secure" "Failed Password"
+
+Filtering to see failed attempt at login.
+
 ![detections](https://github.com/user-attachments/assets/47d88c3c-eec2-4532-94ae-ca2d29331ae7)
+
+**Command:** index=main sourcetype="linux_secure" "Failed password" | rex "from (?<src_ip>\d{1,3}(?:\.\d{1,3}){3})" | stats count as attempt_count by src_ip | where attempt_count >= 3 | sort -attempt_count
+
+To detect which user failed more than 3 times and grab their IP address
 
 ![bits detection table](https://github.com/user-attachments/assets/b4c6bd83-d747-49eb-bff5-c5d5ed38cd8f)
 
 ### Bits Persistance Detection
-Command: index=windows (source="xmlWinEventLog:Microsoft-Windows-Sysmon/Operational" EventCode="1") OR (source="WinEventLog:Security" EventCode="4688")
+**Command:** index=windows (source="xmlWinEventLog:Microsoft-Windows-Sysmon/Operational" EventCode="1") OR (source="WinEventLog:Security" EventCode="4688")
 (Image="*bitsadmin.exe" OR OriginalFileName="bitsadmin.exe")
 (CommandLine="*transfer*" OR CommandLine="*addfile*")
 | table _time, Image, CommandLine, ParentImage, ParentCommandLine, User
