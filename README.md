@@ -54,6 +54,9 @@ This allows them to communicate with each other directly as if they were separat
 2. The **Splunk Enterprise Server** (10.0.0.58) listens on TCP port **9997** for incoming logs from forwarders.
 3. I use my **host machine** to connect to Splunk Web (`http://10.0.0.58:8000`) for dashboards, searches, and detections.
 
+<img width="401" height="511" alt="splunk lab diagram(1)" src="https://github.com/user-attachments/assets/c260d92d-0f61-49b0-9b7a-d375e75c5e35" />
+
+
 ### Detections
 This lab was configured to detect:
 1. Failed SSH login brute force
