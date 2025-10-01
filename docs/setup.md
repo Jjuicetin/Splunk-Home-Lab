@@ -1,3 +1,4 @@
+```
 Windows Forwarder Input File
 [default]
 host = DESKTOP-3LHSK7J
@@ -25,3 +26,4 @@ Windows Forwarder Output File
 
 Ubuntu Server Forwarder Input File
 Ubuntu Server Forwarder Output File
+```
